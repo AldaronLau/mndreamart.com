@@ -1,508 +1,131 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible"content="IE=edge"><meta name="viewport"content="width=device-width,initial-scale=1"><title>MNdreamArt</title><link rel="icon" href="mm/icon.svg"><link rel="stylesheet" href="style.css"></head>
-<style>
-@font-face {
-  font-family: "Luciole";
-  font-weight: normal;
-  font-style: normal;
-  src: url("mm/font/Luciole-Regular.ttf") format("truetype");
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/style.css">
+</head>
 
-@font-face {
-  font-family: "Luciole";
-  font-weight: bold;
-  font-style: normal;
-  src: url("mm/font/Luciole-Bold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Luciole";
-  font-weight: normal;
-  font-style: italic;
-  src: url("mm/font/Luciole-Regular-Italic.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Luciole";
-  font-weight: bold;
-  font-style: italic;
-  src: url("mm/font/Luciole-Bold-Italic.ttf") format("truetype");
-}
-
-html, body {
-  background: var(--purple);
-  color: var(--white);
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-family: "Luciole";
-  font-weight: normal;
-  font-style: normal;
-}
-
-h1 {
-  font-size: 32pt;
-  margin: 0;
-  border: 0;
-  margin: 0;
-  padding: 10pt;
-  padding-bottom: 0;
-  background: var(--black);
-  color: var(--paper);
-}
-
-h2 {
-  font-size: 36pt;
-  padding-left: 24pt;
-  padding-right: 24pt;
-}
-
-h3 {
-  font-size: 32pt;
-  padding-left: 24pt;
-  padding-right: 24pt;
-}
-
-main {
-  max-width: 1200px;
-  color: var(--black);
-  padding: 0;
-  border: 0;
-  margin: 0 auto;
-  display: flex;
-  gap: 2%;
-  flex-wrap: wrap;
-  padding-left: 5pt;
-  padding-right: 5pt;
-  padding-bottom: 20pt;
-}
-
-div {
-  background: var(--paper);
-  border-radius: 10pt;
-  margin: 0;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  box-shadow: inset 0 0 0 5pt var(--border);
-  margin-top: 20pt;
-}
-
-section {
-  background: var(--paper);
-  border-radius: 10pt;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  border: 0;
-  box-shadow: inset 0 0 0 5pt var(--border);
-  margin-top: 20pt;
-}
-
-section h1, div h1 {
-  font-size: 28pt;
-  background: none;
-  color: var(--black);
-  padding-left: 24pt;
-  padding-right: 24pt;
-  padding-bottom: 0pt;
-  padding-bottom: 16pt;
-  padding-top: 20pt;
-}
-
-section p, div p {
-  font-size: 16pt;
-  color: var(--black);
-  margin-top: 0;
-  padding-left: 24pt;
-  padding-right: 24pt;
-}
-
-ul {
-  padding-left: 40pt;
-  font-size: 16pt;
-  color: var(--black);
-}
-
-img {
-  width: 100%;
-}
-
-hr {
-  color: #0000;
-}
-
-.p {
-  background: none;
-  box-shadow: inset 0 0 0 0 var(--border);
-}
-
-:root {
-  --black: #111;
-  --purple: #443355;
-  --paper: #FCE9FF;
-  --border: #9977BB;
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-} 
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  div {
-    width: 49%;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  html, body {
-    padding: 0;
-  }
-}
-</style>
 <body>
-<h1>MNdreamArt</h1>
+
+<header>
+  <h1>Denise Lau - MN Dream Art</h1>
+</header>
+
 <main>
-<section>
-<h1>About</h1>
-<p>
-Local Twin Cities, MN artist offering canvas paintings, painted objects, screen prints and private painting classes/parties in the metro area.  Also available for commissioned art.  To place an order or or to set up a painting party/class, email Denise at <a href="mailto:MNdreamArt@gmail.com">MNdreamArt@gmail.com</a>
-</p>
-</section>
+  <ul class="tabs" role="tablist">
+    <li>
+      <input id="tab1" name="tabs" type="radio" checked />
+      <label for="tab1" role="tab" tabindex="0">About</label>
+      <div id="tab-content1" class="tab-content" role="tabpanel">
+        <ul>
+          <li>Artist Statement 🚧 Under construction 🚧
+          </li>
+          <li>Bio 🚧 Under construction 🚧
+          </li>
+          <li>CV 🚧 Under construction 🚧
+          </li>
+          <li>Résumé 🚧 Under construction 🚧
+          </li>
+        </ul>
+      </div>
+    </li>
 
-<section>
-<h2>Classes / Parties</h2>
-<p>
-Here are some of the paintings that I have taught in 2 hour long classes/private parties. The paintings are also available for you to purchase if you see one you’d like.  The prices vary depending on the size of the canvas.  Contact me if you’d like to host a painting party/class.   You can customize your party with another type of painting if you’d like something different.
-</p>
-</section>
-<div class="p">
-<img src="mm/classes/Forest Blossoms Sunset.jpg" alt="">
-</div>
-<div class="p">
-<img src="mm/classes/Full Moon Aurora Night.jpg" alt="">
-</div>
-<div class="p">
-<img src="mm/classes/Ghosts.jpg" alt="">
-</div>
-<div class="p">
-<img src="mm/classes/Love Bird Season.jpg" alt="">
-<img src="mm/classes/Metallic Chain Flowers.jpg" alt="">
-</div>
-<div class="p">
-<img src="mm/classes/Moonlit Lake.jpg">
-<img src="mm/classes/Metallic Flower Trio.jpg">
-</div>
-<div class="p">
-<img src="mm/classes/Paint Aurora.jpg">
-</div>
-<div class="p">
-<img src="mm/classes/Pour.jpg">
-</div>
-<div class="p">
-<img src="mm/classes/Seaturtle.jpg">
-</div>
-<div class="p">
-<img src="mm/classes/Sgrafito.jpg">
-</div>
-<div class="p">
-<img src="mm/classes/Snowman Awe.jpg">
-</div>
-<div class="p">
-<img src="mm/classes/Tape.jpg">
-</div>
-<div class="p">
-<img src="mm/classes/Tropical Sunset.jpg">
-</div>
-<div class="p">
-<img src="mm/classes/WinterFun.jpg">
-</div>
+    <li>
+      <input type="radio" name="tabs" id="tab2" />
+      <label for="tab2" role="tab" tabindex="1">Paintings</label>
+      <div id="tab-content2" class="tab-content" role="tabpanel">
+        <img src="mm/illusions.jpg" />
+        <p>
+          Illusions<br>
+          Acrylic paint on canvas, 40" x 28"<br>
+          April 2024<br>
+        <br><br>
+        <img src="mm/freedom_flight.jpg" />
+        <p>
+          Freedom Flight<br>
+          Acrylic Paint and texture paste on wood panel, 21" x 21"<br>
+          March 2024<br>
+        <br><br>
+        <img src="mm/mountain_stream.jpg" />
+        <p>
+          Mountain Stream<br>
+          Acrylic paint, spray paint, texture paste, and band sawed dimensional elements on canvas, 18" x 24"<br>
+          February 2024<br>
+        <br><br>
+        <img src="mm/moral_decision.jpg" />
+        <p>
+          Moral Decision<br>
+          Acrylic paint, texture paste, and glitter, 18" x 24"<br>
+          November 2022<br>
+        <br><br>
+        <img src="mm/sunlit_forest.jpg" />
+        <p>
+          Sunlit Forest<br>
+          Acrylic paint and texture paste on canvas, 30" x 20" x 2"<br>
+          April 2022<br>
+        <br><br>
+        <img src="mm/rocky_waterfall.jpg" />
+        <p>
+          Rocky Waterfall<br>
+          Acrylic paint, texture paste, and glitter on canvas, 24" x 18"<br>
+          April 2022<br>
+        <br><br>
+        <img src="mm/distortion.jpg" />
+        <p>
+          Distortion<br>
+          Acrylic paint on canvas, 18 x 24" x 2"<br>
+          March 2022<br>
+        <br><br>
+      </div>
+    </li>
 
-<section>
-<h2>Pour Paintings</h2>
-<p>
-For sale but results vary.  Also available for classes.  Can be custom ordered with the colors of your choice.
-</p>
-</section>
-<div class="p">
-<img src="mm/pour/swamp.jpg">
-</div>
-<div class="p">
-<img src="mm/pour/metallic.jpg">
-</div>
-<div class="p">
-<img src="mm/pour/blk-pnk.jpg">
-</div>
-<div class="p">
-<img src="mm/pour/blue.jpg">
-</div>
-<div class="p">
-<img src="mm/pour/flowers.jpg">
-</div>
-<div class="p">
-<img src="mm/pour/green.jpg">
-</div>
-<div class="p">
-<img src="mm/pour/hotsprings.jpg">
-</div>
-<div class="p">
-<img src="mm/pour/6-4.jpg">
-</div>
-<div class="p">
-<img src="mm/pour/2.jpg">
-</div>
-<div class="p">
-<img src="mm/pour/tall flower.jpg">
-</div>
+    <li>
+      <input type="radio" name="tabs" id="tab3" />
+      <label for="tab3" role="tab" tabindex="1">Prints</label>
+      <div id="tab-content3" class="tab-content" role="tabpanel">
+        <img src="mm/snapshot_of_life.jpg" />
+        <p>
+          Snapshot of Life<br>
+          Watercolor prints on paper with various embellishments like lace, moss, wood, polyfill, glitter, paper pulp, etc.</br>
+          Each panel is about 30" x 11"<br>
+          October 2024<br>
+        <br><br>
+        <img src="mm/birch_forest.jpg" />
+        <p>
+          Birch Forest<br>
+          Reduction Wood Cut Shina Block, Oil based ink print on canvas, 9" x 12"<br>
+          April 2022<br>
+        <br><br>
+      </div>
+    </li>
 
-<section>
-<h2>Screen Prints for Sale</h2>
-<p>
-I also do screen prints, lino cuts, and wood cut prints and I enjoy screen printing on fabrics, canvas, bags, shirts, and paper.  Here are some of my screen printed items:
-</p>
-</section>
-<div class="p">
-<img src="mm/prints/Bags/MN.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Bags/blk bf.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Bags/blu bf.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Bags/or bf.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Bags/red bf.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Bags/ye bf.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Bags/wh bf.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Bags/sunflower.jpg">
-</div>
-<section><hr></section>
-<div class="p">
-<img src="mm/prints/Canvases/M Obama.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Canvases/bird.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Canvases/blk butterfly.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Canvases/bunny.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Canvases/monarch canvas.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Canvases/canvas butterfly.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Canvases/canvas MN.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Canvases/painted notan.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Canvases/lino cut.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Canvases/gray panda.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Canvases/rick.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Canvases/white butterfly.jpg">
-</div>
-<section><hr></section>
-<div class="p">
-<img src="mm/prints/Shirts/heart shirt.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Shirts/shirt Chillin Turtle.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Shirts/MN shirt.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Shirts/crime scene shirt.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Shirts/Notan Bunny Shirt.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Shirts/shirt MN snow.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Shirts/shirt bunny.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Shirts/shirt blue bf.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Shirts/shirt MN water.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Shirts/shirt chic.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Shirts/shirt grey bf.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Shirts/shirt orn bf.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Shirts/shirt unique.jpg">
-</div>
-<div class="p">
-<img src="mm/prints/Shirts/shirt white bf.jpg">
-</div>
+    <li>
+      <input type="radio" name="tabs" id="tab4" />
+      <label for="tab4" role="tab" tabindex="1">Shop</label>
+      <div id="tab-content4" class="tab-content" role="tabpanel">
+        <a href="https://nemaa.org/artists/mndreamart/">
+          nemaa.org/artists/mndreamart/
+        </a>
+      </div>
+    </li>
 
-<section>
-<h2>Acrylic Paintings for Sale</h2>
-<p>
-You can choose one I made or I can make you a special one with your favorite colors and subject although I specialize in landscapes and nature paintings.  I also paint objects like rain barrels, lawn chairs, flower pots, canvas bags, wooden boxes, clip boards, purses, glass candles, clothes, ornaments, all sizes of canvas... just about anything indoor or outdoors with acrylic paints.  Everything is original, hand painted by me for you.  Here is some of the things I have painted recently:
-</p>
-</section>
-<div class="p">
-<img src="mm/sale/4 season trees.jpg">
-</div>
-<div class="p">
-<img src="mm/sale/ASL seasons.jpg">
-</div>
-<div class="p">
-<img src="mm/sale/Sea Turtle Migration 2.jpg">
-</div>
-<div class="p">
-<img src="mm/sale/Sgrafito.jpg">
-</div>
-<div class="p">
-<img src="mm/sale/aurora stripe.jpg">
-</div>
-<div class="p">
-<img src="mm/sale/aurora swirl.jpg">
-</div>
-<div class="p">
-<img src="mm/sale/aurora-0.jpg">
-</div>
-<div class="p">
-<img src="mm/sale/aurora.jpg">
-</div>
-<div class="p">
-<img src="mm/sale/blue butterfly.jpg">
-</div>
-<div class="p">
-<img src="mm/sale/blue-white.jpg">
-</div>
-<div class="p">
-<img src="mm/sale/chain flower.jpg">
-</div>
-<div class="p">
-<img src="mm/sale/chain metalic flowers.jpg">
-</div>
-<div class="p">
-<img src="mm/sale/flat panel canvas MN.jpg">
-</div>
-<div class="p">
-<img src="mm/sale/forest blossom.jpg">
-</div>
-<div class="p">
-<img src="mm/sale/lighthouse storm.jpg">
-</div>
-<div class="p">
-<img src="mm/sale/lighthouse.jpg">
-</div>
-<div class="p">
-<img src="mm/sale/ghosts.jpg">
-</div>
-<div class="p">
-<img src="mm/sale/moon.jpg">
-</div>
-<div class="p">
-<img src="mm/sale/moonlit lake.jpg">
-</div>
-<div class="p">
-<img src="mm/sale/season bird.jpg">
-</div>
-<div class="p">
-<img src="mm/sale/mountain.jpg">
-</div>
-<div class="p">
-<img src="mm/sale/tree tape.jpg">
-</div>
-<div class="p">
-<img src="mm/sale/seaturtle.jpg">
-</div>
-<div class="p">
-<img src="mm/sale/snowman awe.jpg">
-</div>
-<div class="p">
-<img src="mm/sale/sunset beach.jpg">
-</div>
-<div class="p">
-<img src="mm/sale/tape.jpg">
-</div>
+    <li>
+      <input type="radio" name="tabs" id="tab5" />
+      <label for="tab5" role="tab" tabindex="1">Contact</label>
+      <div id="tab-content5" class="tab-content" role="tabpanel">
+        <p>
+          Thank you for your interest in MN Dream Art.
+          Feel free to contact me at
+          <a href="mailto:MNdreamArt@gmail.com">
+            MNdreamArt@gmail.com
+          </a>
+        </p>
+      </div>
+    </li>
 
-<section>
-<h2>Showcase Paintings</h2>
-<p>
-(Not in inventory - but most can be special ordered)
-</p>
-</section>
-<div class="p">
-<img src="mm/showcase/Showcase Langton Screen.jpg">
-</div>
-<div class="p">
-<img src="mm/showcase/showcase forest.jpg">
-</div>
-<div class="p">
-<img src="mm/showcase/showcase sunset.jpg">
-</div>
-<div class="p">
-<img src="mm/showcase/showcase trees.jpg">
-</div>
-<div class="p">
-<img src="mm/showcase/showcase metallic flowers.jpg">
-</div>
-<div class="p">
-<img src="mm/showcase/showcase purple-yellow.jpg">
-</div>
-<div class="p">
-<img src="mm/showcase/showcase river.jpg">
-</div>
-<div class="p">
-<img src="mm/showcase/showcase shimmer forest.jpg">
-</div>
-<div class="p">
-<img src="mm/showcase/showcase texture aurora.jpg">
-</div>
-<div class="p">
-<img src="mm/showcase/showcase texture tree-fire.jpg">
-</div>
-<div class="p">
-<img src="mm/showcase/showcase waterfall.jpg">
-</div>
-<div class="p">
-<img src="mm/showcase/rainbarrel.jpg">
-</div>
-
+  </ul>
 </main>
-</body></html>
+
+</body>
+</html>
