@@ -1,88 +1,84 @@
 * {
   margin: 0;
   padding: 0;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 body {
+  color: black;
+  background: #eeb;
+}
+
+header {
   color: white;
   background: #24d;
 }
 
-main {
-  color: black;
-  background: #eeb;
-  text-align: left;
-  min-height: 30rem;
-}
-
 h1 {
+  text-align: center;
   font-size: xxx-large;
   font-weight: normal;
-  justify-content: center;
+}
+
+a {
+  color: #00a;
 }
 
 img, video {
-  margin-left: 10%;
-  width: 80%;
-  height: auto;
+  width: auto;
+  height: 80vh;
 }
 
 .tabs {
-  float: none;
+  display: flex;
   list-style: none;
   position: relative;
-  text-align: left;
 }
-.tabs > li {
-  float: left;
-  display: block;
+
+.tabs > li > label > input[type="radio"] {
+  appearance: none;
 }
-.tabs input[type="radio"] {
-  position: absolute;
-  top: 0;
-  left: -9999px;
-}
+
 .tabs > li > label {
-  display: block;
+  margin: 0 0.1rem;
   padding: 0.2rem 0.3rem;
   border-radius: 0.1rem 0.1rem 0 0;
   font-size: large;
   background: #aa8;
   cursor: pointer;
-  position: relative;
-  top: 0;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-.tabs label:hover {
+
+.tabs > li > label:has(> input[name="tabs"]:checked) {
+  padding: 0.4rem 0.3rem;
+  background: #eeb;
+}
+
+.tabs > li > label:hover {
   background: #ffd;
 }
+
 .tab-content {
   z-index: 2;
   display: none;
-  overflow: hidden;
-  width: 100%;
+  position: absolute;
+  padding: 2rem;
+  top: 1rem;
+  left: 0;
+  width: 95%;
   font-size: large;
   line-height: 2rem;
-  padding: 2rem;
-  position: absolute;
-  top: 2rem;
-  left: 0;
-  background: #eeb;
-}
-.tabs [id^="tab"]:checked + label {
-  top: 0.2rem;
-  background: #eeb;
-}
-.tabs [id^="tab"]:checked ~ [id^="tab-content"] {
-  display: block;
 }
 
-a {
-  color: #00a;
+.tabs > li > label:has(> input[name="tabs"]:checked) ~ .tab-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab-content > div {
+  position: relative;
+  border: 1px outset;
+  padding: 0.3rem;
+  margin: 0.7rem;
 }
