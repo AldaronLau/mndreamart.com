@@ -24,6 +24,12 @@ h1 {
   justify-content: center;
 }
 
+img, video {
+  margin-left: 10%;
+  width: 80%;
+  height: auto;
+}
+
 .tabs {
   float: none;
   list-style: none;
