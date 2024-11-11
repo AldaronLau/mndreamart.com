@@ -23,6 +23,10 @@ a {
   color: #00a;
 }
 
+p + p {
+  padding-top: 1rem;
+}
+
 img, video {
   max-width: 95%;
   max-height: 80vh;
