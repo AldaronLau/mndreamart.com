@@ -87,3 +87,40 @@ img, video {
   padding: 0.3rem;
   margin: 0.7rem;
 }
+
+.category {
+  min-width: 24rem;
+}
+.category :nth-child(1) {
+  text-align: center;
+  text-decoration: underline;
+}
+.soap {
+  max-width: 18rem;
+  text-align: center;
+}
+.soap :nth-child(1) {
+  font-weight: bold;
+  font-size: 150%;
+}
+.soap :nth-child(2) {
+  font-size: 125%;
+}
+.ice {
+  background: #e86;
+}
+.holiday {
+  background: #aeb;
+}
+.nature {
+  background: #8e6;
+}
+.health {
+  background: #e8e;
+}
+.food {
+  background: #fb6;
+}
+.people {
+  background: #99e;
+}
